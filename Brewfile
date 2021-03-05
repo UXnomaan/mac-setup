@@ -37,6 +37,7 @@ brew "mas"
 brew "memcached"
 brew "mercurial"
 brew "micro"
+brew "netlify-cli"
 brew "node"
 brew "nvm" 
 brew "openvpn", restart_service: true
