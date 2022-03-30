@@ -33,6 +33,8 @@ brew "docker", link: false
 brew "docker-machine"
 # Programming language for highly scalable real-time systems
 brew "erlang"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Generate introspection data for GObject libraries
@@ -63,6 +65,8 @@ brew "gotop"
 brew "gradle"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Add GitHub support to git on the command-line
@@ -71,8 +75,6 @@ brew "hub"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
 # C and C++ client library to the memcached server
 brew "libmemcached"
 # Text-based web browser
@@ -83,14 +85,20 @@ brew "markdown"
 brew "mas"
 # High performance, distributed memory object caching system
 brew "memcached"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Scalable distributed version control system
 brew "mercurial"
 # Modern and intuitive terminal-based text editor
 brew "micro"
 # HTTP and WebDAV client library with a C interface
 brew "neon"
+# Platform built on V8 to build network applications
+brew "node"
 # Netlify command-line tool
 brew "netlify-cli"
+# HTTP/2 C Library
+brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
 # Manage multiple Node.js versions
@@ -99,6 +107,8 @@ brew "nvm"
 brew "openvpn", restart_service: true
 # Highly capable, feature-rich programming language
 brew "perl"
+# 📦🚀 Fast, disk space efficient package manager
+brew "pnpm", link: false
 # Object-relational database system
 brew "postgresql"
 # Highly performant implementation of Python 2 in Python
@@ -144,7 +154,7 @@ brew "zsh-syntax-highlighting"
 # 🔥 Feature-rich interactive Jira command-line
 brew "ankitpokhrel/jira-cli/jira-cli"
 # AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
-brew "aws/tap/aws-sam-cli", link: false
+brew "aws/tap/aws-sam-cli"
 # Network scanner
 cask "angry-ip-scanner"
 # Application uninstaller
@@ -162,6 +172,7 @@ cask "blender"
 # Web browser focusing on privacy
 cask "brave-browser-dev"
 cask "caldigit-docking-utility"
+# Improved Apple device support
 cask "caldigit-thunderbolt-charging"
 # Free and open-source web browser
 cask "chromium"
@@ -174,6 +185,8 @@ cask "corretto11"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Tool to hide status bar icons
+cask "dozer"
 # Eclipse IDE for Java developers
 cask "eclipse-java"
 # Collaborative team software
@@ -188,6 +201,8 @@ cask "font-lato"
 cask "freecad"
 # Tool to measure the computer system's performance
 cask "geekbench"
+# App that shows GitHub notifications on the desktop
+cask "gitify"
 # Git client focusing on productivity
 cask "gitkraken"
 # Git interface focused on visual interaction
@@ -204,10 +219,14 @@ cask "iterm2"
 cask "karabiner-elements"
 # Test automation solution
 cask "katalon-studio"
+# Open-source keystroke visualizer
+cask "keycastr"
 # Office suite
 cask "libreoffice"
 # Software for Logitech devices
 cask "logitech-options"
+# Screen and video recording software
+cask "loom"
 # Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
 # Operating system maintenance and cleaning utility
@@ -231,6 +250,8 @@ cask "nomachine"
 cask "obs"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Home media player
+cask "plex"
 cask "postgres"
 # GUI client for PostgreSQL databases
 cask "postico"
@@ -258,8 +279,6 @@ cask "sublime-merge"
 cask "sublime-text"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# QuickLook generator for Markdown files
-cask "toland-qlmarkdown"
 # Open-source code editor
 cask "visual-studio-code"
 # Code editor
@@ -268,7 +287,9 @@ cask "visual-studio-code-insiders"
 cask "vlc"
 # Desktop client for WhatsApp
 cask "whatsapp"
+mas "AdBlock", id: 1402042596
 mas "Apple Configurator 2", id: 1037126344
+mas "Canary Mail", id: 1236045954
 mas "GarageBand", id: 682658836
 mas "Grammarly for Safari", id: 1462114288
 mas "Honey", id: 1472777122
